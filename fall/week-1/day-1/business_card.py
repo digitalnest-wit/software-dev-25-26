@@ -2,13 +2,11 @@
 
 print(" Welcome to the Business Card Generator \n")
 
-# Collect user input
 name = input("Enter your name: ")
 age = input("Enter your age: ")
 dream_job = input("Enter your dream job: ")
 hobby = input("Enter your favorite hobby: ")
 
-# Print formatted "business card"
 print("\nHere\'s your Business Card")
 print("-" * 40)
 print(f"Name:        {name}")
