@@ -1,5 +1,5 @@
 # ============================================================================
-# CODE ALONG 2: Savings Tracker (FIXED VERSION)  
+# CODE ALONG: Savings Tracker (FIXED VERSION)  
 # Expected behavior: Calculate how much more money and time needed to reach goal
 # ============================================================================
 

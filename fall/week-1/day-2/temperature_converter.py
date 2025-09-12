@@ -1,9 +1,10 @@
-# Temperature Converter
-# Run here: https://www.programiz.com/online-compiler/7DnSZiaFU0Fge
+# ============================================================================
+# CHALLENGE: Temperature Converter
+# Expected behavior: Calculate the total amount to pay given a total a tip
+# percentage.
+# ============================================================================
 
-# Formula: 32°F − 32) × 5/9 = 0°C
-
-temp_fahrenheit = float(input('What\'s the temperature outside? (ºF) '))
+temp_fahrenheit = float(input('Enter a temperature: ºF '))
 temp_celsius = (temp_fahrenheit - 32) * (5 / 9)
 
-print(f' => {temp_celsius}ºC')
+print(f'=> {temp_celsius:.2f}ºC')

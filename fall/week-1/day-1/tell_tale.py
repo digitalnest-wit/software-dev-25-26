@@ -1,3 +1,9 @@
+# ============================================================================
+# CODE ALONG: Tell Tale
+# Expected behavior: Create a unique story given diffrent types of words (such
+# as a name, place, feeling, etc.)
+# ============================================================================
+
 print("🎉 Welcome to the Story Maker! 🎉")
 print("Answer the following questions to create your custom story.\n")
 

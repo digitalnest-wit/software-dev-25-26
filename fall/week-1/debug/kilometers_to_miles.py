@@ -1,5 +1,5 @@
 # ============================================================================
-# CODE ALONG 1: Kilometers to Miles (BUGGY VERSION)
+# CODE ALONG: Kilometers to Miles (BUGGY VERSION)
 # Expected behavior: Convert kilometers to miles (1 km = 0.621371 miles)
 # ============================================================================
 

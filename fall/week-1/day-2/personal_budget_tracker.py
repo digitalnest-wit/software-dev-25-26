@@ -1,5 +1,8 @@
-# Personal Budget Tracker
-# Run here: https://www.programiz.com/online-compiler/0moVyq6i5z5GM
+# ============================================================================
+# CHALLENGE: Personal Budget Tracker
+# Expected behavior: Calculate money available and display a summary given
+# monthly expenses and budget goals.
+# ============================================================================
 
 print("Personal Budget Tracker")
 print()

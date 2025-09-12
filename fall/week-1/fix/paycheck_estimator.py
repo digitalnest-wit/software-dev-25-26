@@ -1,5 +1,5 @@
 # ============================================================================
-# CODE ALONG 3: Paycheck Estimator (BUGGY VERSION)
+# CODE ALONG: Paycheck Estimator (FIXED VERSION)
 # Expected behavior: Calculate take-home pay after 20% tax deduction
 # ============================================================================
 

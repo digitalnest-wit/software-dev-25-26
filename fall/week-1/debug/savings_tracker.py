@@ -1,5 +1,5 @@
 # ============================================================================
-# CODE ALONG 2: Savings Tracker (BUGGY VERSION)  
+# CODE ALONG: Savings Tracker (BUGGY VERSION)  
 # Expected behavior: Calculate how much more money and time needed to reach goal
 # ============================================================================
 

@@ -1,4 +1,8 @@
-# Business Card Generator
+# ============================================================================
+# CHALLENGE: Business Card
+# Expected behavior: Display a formatted 'business card' given a name, age, dream
+# job, and favorite hobby.
+# ============================================================================
 
 print(" Welcome to the Business Card Generator \n")
 
