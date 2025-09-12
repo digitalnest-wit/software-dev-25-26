@@ -6,7 +6,7 @@ place = input("Enter a place: ")
 object_ = input("Enter an object: ")
 animal = input("Enter an animal: ")
 feeling = input("Enter a feeling: ")
-activity = input("Enter an activity: ")
+activity = input("Enter a verb (present tense): ")
 
 # Change the story template below to create your own unique story
 story = f"""
@@ -16,5 +16,6 @@ Instead of being scared, {name} decided to {activity} with the {animal}.
 It turned out to be the start of an unforgettable adventure!
 """
 
-print("\nHere’s your story! ")
+print()
+print("Here's your story!")
 print(story)
