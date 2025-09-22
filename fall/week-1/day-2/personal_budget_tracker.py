@@ -22,21 +22,25 @@ print()
 total_budget = food_budget + entertainment_budget + videogames_budget + subscriptions_budget
 money_available = monthly_income - rent_cost
 
-print("Income and Expenses")
-print("===================")
-print()
-print(f'Monthly income: ${monthly_income:.2f}')
-print(f'Cost of rent:   ${rent_cost:.2f}')
-print(f'Available:      ${money_available:.2f}')
-print()
-print("Budgets")
-print("=======")
-print()
-print(f'Food:           ${food_budget:.2f}')
-print(f'Entertainment:  ${entertainment_budget:.2f}')
-print(f'Video Games:    ${videogames_budget:.2f}')
-print(f'Subscriptions:  ${subscriptions_budget:.2f}')
-print()
-print(f'Total budgets:          ${total_budget:.2f}')
-print(f'Available after budget: ${money_available - total_budget:.2f}')
-print("=" * 20)
+summary = f'''
+Income and Expenses
+===================
+
+Monthly income: ${monthly_income:.2f}
+Cost of rent:   ${rent_cost:.2f}
+Available:      ${money_available:.2f}
+
+Budgets
+=======
+
+Food:           ${food_budget:.2f}
+Entertainment:  ${entertainment_budget:.2f}
+Video Games:    ${videogames_budget:.2f}
+Subscriptions:  ${subscriptions_budget:.2f}
+
+Total budgets:          ${total_budget:.2f}
+Available after budget: ${money_available - total_budget:.2f}
+{"=" * 20}
+'''
+
+print(summary)
