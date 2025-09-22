@@ -1,3 +1,9 @@
+# ============================================================================
+# CHALLENGE: Private Club Entry Kiosk
+# Expected behavior: Determines whether the user is allowed to enter a private
+# club, given some user information (age, ID, shoes, VIP, secret).
+# ============================================================================
+
 banner = f'''
 +{'-' * 48}+
 |{'Private Club Entry Kiosk'.center(48)}|
