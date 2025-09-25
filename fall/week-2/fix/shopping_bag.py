@@ -1,8 +1,7 @@
 # Shopping Cart Discount Calculator - COMPLETE VERSION
 # This program calculates discounts based on membership status and cart total
 
-print("🛒 Welcome to Digital NEST Store! 🛒")
-print()
+print("== Digital NEST Store ==\n")
 
 # Get user input
 name = input("Enter your name: ")
@@ -42,7 +41,7 @@ final_total = cart_total - discount_amount
 # Display results
 results = f'''
 {"=" * 40}
-"ORDER SUMMARY"
+ORDER SUMMARY
 {"=" * 40}
 Customer: {name}
 Member: {'Yes' if membership == 'yes' else 'No'}
@@ -55,10 +54,10 @@ Final Total: ${final_total:.2f}
 
 print(results)
 
-# Thank you message
 if discount_percent > 0:
-    print(f"🎉 You saved ${discount_amount:.2f}!")
+    print(f"You saved ${discount_amount:.2f}!")
 else:
-    print("💡 Tip: Become a member to save on all orders!")
+    print("Tip: Become a member to save on all orders")
 
-print("Thank you for shopping with us! 😊")
+print("Thank you for shopping with us.")
+
