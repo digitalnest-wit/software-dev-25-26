@@ -1,8 +1,5 @@
-# Game Stats Tracker (BUGGY VERSION)
-
 print("=== Game Stats Tracker ===\n")
 
-# Player stats dictionary
 player_stats = {
     "username": "Player1",
     "level": 5,
@@ -13,36 +10,39 @@ player_stats = {
 }
 
 # Display current stats
-print(f"Player: {player_stats['username']}")
-print(f"Level: {player_stats['level']}")
-print(f"Record: {player_stats['wins']}-{player_stats['losses']}")
-print(f"K/D: {player_stats['kills']}/{player_stats['deaths']}")
+print(f"Player:       {player_stats['username']}")
+print(f"Level:        {player_stats['level']}")
+print(f"Wins:         {player_stats['wins']}")
+print(f"Losses:       {player_stats['losses']}")
+print(f"Kills/Deaths: {player_stats['kills']}/{player_stats['deaths']}")
 
-# Bug 1: KeyError - trying to access a key that doesn't exist
+# Display the 'score' stat (hint: may not exist. check if the key exists first)
 print(f"Score: {player_stats['score']}")
 
-# Bug 2: Missing assignment operator
 print("\n=== Game Results ===")
 result = input("Did you win? (yes/no): ")
 
+# Update player stats depending on whether they won or not
 if result == "yes":
     player_stats["wins"] = player_stats["wins"] + 1
     player_stats["level"] + 1 
 else:
     player_stats["losses"] += 1
 
-# Bug 3: Trying to add new stat with wrong syntax
+# Add new stat, 'matches_played'
 player_stats("matches_played") = 20
 
 # Update kills and deaths
-new_kills = int(input("Kills this game: "))
-new_deaths = int(input("Deaths this game: "))
+new_kills = int(input("\nHow many kills this last game?: "))
+new_deaths = int(input("How many deaths this last game?: "))
 
 player_stats["kills"] += new_kills
 player_stats["deaths"] += new_deaths
 
-# Bug 4: Using wrong method - trying to get a key that might not exist
-experience = player_stats["experience"]  # Should use .get() with default value
+# Get the 'experience' stat value. (hint: might not exist. which dict method
+# gets you a value and provides a way to return a default value if the key
+# doesn't exist?)
+experience = player_stats["experience"]
 
 # Calculate win rate
 total_games = player_stats["wins"] + player_stats["losses"]
@@ -50,10 +50,10 @@ win_rate = player_stats["wins"] / total_games * 100
 
 # Display updated stats
 print("\n=== Updated Stats ===")
-print(f"Player: {player_stats['username']}")
-print(f"Level: {player_stats['level']}")
-print(f"Record: {player_stats['wins']}-{player_stats['losses']}")
-print(f"Win Rate: {win_rate}%")
-print(f"K/D Ratio: {player_stats['kills'] / player_stats['deaths']}")
+print(f"Player:        {player_stats['username']}")
+print(f"Level:         {player_stats['level']}")
+print(f"Record:        {player_stats['wins']}-{player_stats['losses']}")
+print(f"Win Rate:      {win_rate}%")
+print(f"K/D Ratio:     {player_stats['kills'] / player_stats['deaths']}")
 print(f"Total Matches: {player_stats['matches_played']}")
-print(f"Experience: {experience}")
+print(f"Experience:    {experience}")

@@ -38,7 +38,7 @@ ingredients["vanilla_extract"] = "1 tsp"
 
 # Update servings
 print("\n=== Adjust Recipe ===")
-new_servings = int(input("How many servings do you need? "))
+new_servings = int(input("How many additional servings do you need? "))
 
 # Bug 4: Missing assignment operator
 recipe["servings"] += new_servings
