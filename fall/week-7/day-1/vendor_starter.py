@@ -6,35 +6,30 @@ def load_vendor_items() -> list[dict]:
     Returns:
         list[dict]: The items listed in the vendor file.
     """
-    raise NotImplementedError
-
-def update_vendor_items(items: list[dict]):    
-    """Updates the vendor file, replacing its contents with items.
-
-    Args:
-        items (list[dict]): The updated vendor items.
-    """
-    raise NotImplementedError
-
-vendor_items = load_vendor_items()
-
-print("Make a selection:")
-
-for i, item in enumerate(vendor_items):
-    if item["amount"] == 0:
-        continue
     
-    print(f"  {i + 1}: {item["name"]} @ ${item["price"]:.2f}")
+    items = []
 
-selection = int(input("\n> Selection: "))
-if selection < 1 or selection > len(vendor_items):
-    print("Bad selection. Try again.")
-else:
-    item_selected = vendor_items[selection - 1]
-    print(f"Selected {item_selected["name"]}. Vending..")
+    with open("vendor.txt") as file:
+        lines = file.readlines()
+
+    for line in lines:
+        line = line.split(",")
+        name, price, amount = line
+        
+        item = {
+            "name": name,
+            "price": float(price),
+            "amount": int(amount),
+        }
+        
+        items.append(item)
+
+    return items
     
-    sleep(1)
-    item_selected["amount"] -= 1
-    update_vendor_items(vendor_items)
     
-    print("Done! Enjoy :)")
+def update_vendor_items(items: list[dict]):
+    with open("vendor.txt", mode="w") as file:
+        for item in items:
+            name, price, amount = item.values()
+            file.write(f"{name},{price},{amount}\n")
+

@@ -3,3 +3,5 @@ ham
 bacon
 apples
 bananas
+apples
+bananas
